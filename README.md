@@ -24,7 +24,7 @@ Barely a bunch of [CFFI](https://cffi.common-lisp.dev/)-binding for libtcl/libtk
 ## Supporting
 
 Enjoying this project? Consider supporting its growth via the Ethereum
-address in my profile.
+address in [my profile](https://github.com/ageldama).
 
 ## License
 
