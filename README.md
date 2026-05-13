@@ -26,4 +26,4 @@ Barely a bunch of [CFFI](https://cffi.common-lisp.dev/)-binding for libtcl/libtk
 
 [Licensed under the MIT License](https://opensource.org/license/mit)
 
-Please read the [./LICENSE]
+Please read the [./LICENSE](./LICENSE)
