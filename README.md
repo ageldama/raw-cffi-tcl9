@@ -1,10 +1,8 @@
 # raw-cffi-tcl9
 
-
-* VERSION: 0.0.1
-
 Barely a bunch of [CFFI](https://cffi.common-lisp.dev/)-binding for libtcl/libtk version 9.0.
 
+* VERSION: 0.0.1
 
 * (Almost?) tested under:
    * SBCL 2.6.4 / Linux x86_64
@@ -20,6 +18,8 @@ Barely a bunch of [CFFI](https://cffi.common-lisp.dev/)-binding for libtcl/libtk
   > (ql:quickload :raw-cffi-tcl9)
   ```
 
+
+...More hacks will be come, anytime soon. ;-)
 
 
 ## License
