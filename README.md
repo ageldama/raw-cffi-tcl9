@@ -21,6 +21,10 @@ Barely a bunch of [CFFI](https://cffi.common-lisp.dev/)-binding for libtcl/libtk
 
 ...More hacks will be come, anytime soon. ;-)
 
+## Supporting
+
+Enjoying this project? Consider supporting its growth via the Ethereum
+address in my profile.
 
 ## License
 
