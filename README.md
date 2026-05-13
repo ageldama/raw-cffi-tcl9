@@ -3,8 +3,6 @@
 
 * VERSION: 0.0.1
 
-
-
 Barely a bunch of [CFFI](https://cffi.common-lisp.dev/)-binding for libtcl/libtk version 9.0.
 
 
