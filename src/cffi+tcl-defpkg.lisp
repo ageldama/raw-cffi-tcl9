@@ -781,6 +781,7 @@
    #:TCL-GET-STD-CHANNEL
    #:TCL-GET-STRING
    #:TCL-GET-STRING-FROM-OBJ
+   #:tcl-get-string-from-obj/char*
    #:TCL-GET-STRING-RESULT
    #:TCL-GET-THREAD-DATA
    #:TCL-GET-TIME

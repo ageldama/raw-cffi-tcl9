@@ -4147,6 +4147,12 @@ Tcl_GetStringFromObj(Tcl_Obj *objPtr, Tcl_Size *lengthPtr);"
   (obj-ptr     tcl-obj-ptr)
   (length-ptr  tcl-size-ptr))
 
+(defcfun ("Tcl_GetStringFromObj" tcl-get-string-from-obj/char*) (:pointer :char)
+  "/* 651 */ EXTERN char *
+Tcl_GetStringFromObj(Tcl_Obj *objPtr, Tcl_Size *lengthPtr);"
+  (obj-ptr     tcl-obj-ptr)
+  (length-ptr  tcl-size-ptr))
+
 (defcfun ("Tcl_GetUnicodeFromObj" tcl-get-unicode-from-obj) tcl-uni-char-ptr
   "/* 652 */ EXTERN Tcl_UniChar *
 Tcl_GetUnicodeFromObj(Tcl_Obj *objPtr, Tcl_Size *lengthPtr);"
