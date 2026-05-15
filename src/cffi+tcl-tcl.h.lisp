@@ -83,6 +83,8 @@ use backslash quoting instead.")
   )
 (defconstant +tcl-link-float+		13)
 (defconstant +tcl-link-wide-uint+	14)
+(defconstant +tcl-link-chars+	        15)
+(defconstant +tcl-link-binary+	        16)
 (defconstant +tcl-link-read-only+	#x80)
 
 
