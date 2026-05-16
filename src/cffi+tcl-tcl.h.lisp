@@ -142,6 +142,9 @@ use backslash quoting instead.")
 
 (defconstant +tcl-allow-inline-compilation+ #x20000)
 
+(defconstant +tcl-trace-enter-exec+	1)
+(defconstant +tcl-trace-leave-exec+	2)
+
 
 
 (defconstant +tcl-limit-commands+	#x01)
