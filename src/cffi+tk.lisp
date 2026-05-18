@@ -1,14 +1,3 @@
-(defpackage #:raw-cffi-tcl9
-  (:use #:cl #:cffi)
-  (:export
-   #:libtk
-   #:tk-init
-   #:tk-safe-init
-   #:tk-create-console-window
-   #:tk-main-loop
-   ))
-
-
 
 (in-package :raw-cffi-tcl9)
 

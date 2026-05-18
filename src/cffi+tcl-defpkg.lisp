@@ -1343,4 +1343,10 @@
    #:TCL_UTF-NEXT
    #:TCL_UTF-PREV
 
+   #:libtk
+   #:tk-init
+   #:tk-safe-init
+   #:tk-create-console-window
+   #:tk-main-loop
+
    ))
