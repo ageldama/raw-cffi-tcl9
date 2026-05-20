@@ -15,13 +15,16 @@
   (defctype tcl-uni-char :uint)
   (defconstant +tcl-utf-max+ 4)
 
-  (if (eq (cffi:foreign-type-size :long-long)
-          (cffi:foreign-type-size :long))
-      (progn
-        (defctype tcl-wide-int :long)
-        (defctype tcl-wide-uint :unsigned-long))
-      (progn
-        (defctype tcl-wide-int :long-long)
-        (defctype tcl-wide-uint :unsigned-long-long)))
+  (defctype tcl-wide-int :int64)
+  (defctype tcl-wide-uint :uint64)
+
+  ;; (if (eq (cffi:foreign-type-size :long-long)
+  ;;         (cffi:foreign-type-size :long))
+  ;;     (progn
+  ;;       (defctype tcl-wide-int :long)
+  ;;       (defctype tcl-wide-uint :unsigned-long))
+  ;;     (progn
+  ;;       (defctype tcl-wide-int :long-long)
+  ;;       (defctype tcl-wide-uint :unsigned-long-long)))
 
   )
