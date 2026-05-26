@@ -4,12 +4,12 @@
 
 (eval-when (:compile-toplevel :load-toplevel :execute)
   (define-foreign-library libtk
-    (:unix    (:or #.(or (uiop:getenv "CFFI_LIBTK")
-                         "libtcl9tk9.0.so" "libtk9.0.so" )))
-    (:darwin  (:default #.(or (uiop:getenv "CFFI_LIBTK")
-                              "libtcl9tk9.0.dylib" "libtk9.0.dylib" )))
-    (:windows (:or #.(or (uiop:getenv "CFFI_LIBTK") "libtcl9tk90"
-                         "tcl9tk90" "tcl9tk90t")))
+    (:unix    (:or #.(or (uiop:getenv "CFFI_LIBTK") "libtk9.0.so")
+                         "libtcl9tk9.0.so"))
+    (:darwin  (:default #.(or (uiop:getenv "CFFI_LIBTK") "libtcl9tk9.0.dylib")
+                        "libtk9.0.dylib" ))
+    (:windows (:or #.(or (uiop:getenv "CFFI_LIBTK") "libtcl9tk90")
+                   "tcl9tk90" "tcl9tk90t"))
     (t (:default #.(or (uiop:getenv "CFFI_LIBTK") "libtcl9tk9.0"))))
 
   (use-foreign-library libtk))

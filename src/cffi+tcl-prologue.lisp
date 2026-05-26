@@ -4,10 +4,11 @@
 (eval-when (:compile-toplevel :load-toplevel :execute)
 
   (define-foreign-library libtcl
-      (:unix    (:or #.(or (uiop:getenv "CFFI_LIBTCL") "libtcl9.0.so")))
-    (:darwin  (:default #.(or (uiop:getenv "CFFI_LIBTCL") "libtcl9.0.dylib")))
-    (:windows (:or #.(or (uiop:getenv "CFFI_LIBTCL") "libtcl90"
-                         "tcl90" "tcl90t")))
+    (:unix    (:or #.(or (uiop:getenv "CFFI_LIBTCL") "libtcl9.0.so")
+                   "libtcl"))
+    (:darwin  (:or #.(or (uiop:getenv "CFFI_LIBTCL") "libtcl9.0.dylib")))
+    (:windows (:or #.(or (uiop:getenv "CFFI_LIBTCL") "libtcl90")
+                   "tcl90" "tcl90t"))
     (t (:default #.(or (uiop:getenv "CFFI_LIBTCL") "libtcl"))))
 
   (use-foreign-library libtcl)
